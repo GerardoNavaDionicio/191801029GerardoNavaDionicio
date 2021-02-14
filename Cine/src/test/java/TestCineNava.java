@@ -5,7 +5,7 @@ public class TestCineNava {
         int check=0;
         boolean horaCheck;
         Scanner scanner = new Scanner(System.in);
-        Cine cine=new Cine("Cinepolis", 9, 11);
+        Cine cine=new Cine("Cinepolis", 9, 23);
         do{
             System.out.println("\n\nQuieres agregar pelicula?\t1 = Si\t0 = No");
             check=scanner.nextInt();
@@ -20,7 +20,6 @@ public class TestCineNava {
                 default:
                     System.out.println(cine.toString());
                     System.out.println("Numero de Peliculas: "+ cine.totalPeliculas());
-                   //System.out.println(cine.totalPeliculas());
                     System.out.println(cine.imprimirPeliculas());
                     break;
             }
