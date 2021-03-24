@@ -1,12 +1,23 @@
 import java.sql.*;
 import java.util.Scanner;
 import DaoUsuarios.DaoUsuarios;
-import Usuarios.Usuarios;
+import Usuarios.Usuario;
 
 public class Insertar {
     public static void main(String[] args) throws SQLException {
         
-        /*
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nombre Usuario:");
+        String usuario=scanner.nextLine();
+        System.out.println("Contraseña:");
+        String constraseña=scanner.nextLine();
+        Usuario newUsuario= new Usuario(usuario, constraseña);        
+        DaoUsuarios.insertar(newUsuario);
+        System.out.println("!<!<!<!<!<!Usuario Registrado!>!>!>!>!>!");
+        System.out.println("\t"+newUsuario); 
+    }
+}
+/*
         String url="jdbc:mysql://localhost:33065/usuarios?zeroDateTimeBehavior=CONVERT_TO_NULL";
         try{
             //crear conexion con base de datos
@@ -37,17 +48,3 @@ public class Insertar {
             ex.printStackTrace(System.out);
         }
     }*/
-        
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nombre Usuario:");
-        String usuario=scanner.nextLine();
-        System.out.println("Contraseña:");
-        String constraseña=scanner.nextLine();
-        System.out.println("Estatus: ");
-        int status=scanner.nextInt();
-        Usuarios newUsuario= new Usuarios(usuario, constraseña, true);        
-        DaoUsuarios.insertar(newUsuario);
-        System.out.println(newUsuario);
-        
-    }
-}

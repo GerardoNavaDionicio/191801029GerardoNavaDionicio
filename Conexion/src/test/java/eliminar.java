@@ -1,5 +1,5 @@
 
-import Usuarios.Usuarios;
+import Usuarios.Usuario;
 import java.sql.*;
 import java.util.Scanner;
 import DaoUsuarios.DaoUsuarios;
@@ -15,11 +15,14 @@ import DaoUsuarios.DaoUsuarios;
  */
 public class eliminar {
     public static void main(String[] args) throws SQLException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Que usuario quieres Eliminar?:\t");
-        String idDelete=scanner.nextLine();
-        Usuarios usuario = new Usuarios(0);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ingrese ID de usuario que desea eliminar");
+        int id = scan.nextInt();
+        Usuario usuario = new Usuario(id);
         DaoUsuarios.eliminar(usuario);
+        System.out.println("\t FINISH HIM");
+    }
+}
         
         
         
@@ -53,5 +56,4 @@ public class eliminar {
         
         
         
-    }
-}
+    
