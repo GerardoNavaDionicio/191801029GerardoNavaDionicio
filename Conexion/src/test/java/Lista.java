@@ -9,13 +9,15 @@ import java.util.List;
  */
 public class Lista
 {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException 
+    {
         List <Usuario> listaUsuarios = new ArrayList<>();
         listaUsuarios = DaoUsuarios.listaUsuarios();
-        for(Usuario usuario:listaUsuarios){
+        for(Usuario usuario:listaUsuarios)
+        {
             System.out.println(usuario);
         }
-    }
+   }
     /*public static void main(String[] args) throws SQLException{ 
     //crear conexion con base de datos
     Connection conexion=Conexion.getConnection();

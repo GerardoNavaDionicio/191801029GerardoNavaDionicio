@@ -10,9 +10,13 @@ public class Insertar {
         System.out.println("Nombre Usuario:");
         String usuario=scanner.nextLine();
         System.out.println("Contraseña:");
-        String constraseña=scanner.nextLine();
-        Usuario newUsuario= new Usuario(usuario, constraseña);        
+        String contraseña=scanner.nextLine();
+        
+        
+        Usuario newUsuario= new Usuario(usuario, contraseña);        
         DaoUsuarios.insertar(newUsuario);
+        
+        
         System.out.println("!<!<!<!<!<!Usuario Registrado!>!>!>!>!>!");
         System.out.println("\t"+newUsuario); 
     }

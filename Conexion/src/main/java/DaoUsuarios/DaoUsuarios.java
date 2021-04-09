@@ -9,10 +9,6 @@ import Usuarios.Usuario;
 import java.sql.*;
 import java.util.*;
 
-/**
- *
- * @author GenadyThink
- */
 public class DaoUsuarios {
     private static String SQL;
     
@@ -50,6 +46,12 @@ public class DaoUsuarios {
         declaracion.executeUpdate();
         Conexion.close(conexion, declaracion);
     }
+    
+    
+    
+    
+    
+    
     
     public static void eliminar(Usuario usuario)throws SQLException{
         Connection conexion = Conexion.getConnection();

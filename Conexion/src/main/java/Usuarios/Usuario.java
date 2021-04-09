@@ -85,7 +85,8 @@ public class Usuario {
     public String toString() {
         return nombre_usuario;
     }
-        public Usuario(int id, String nombre_usuario) {
+    
+    public Usuario(int id, String nombre_usuario) {
         this.id = id;
         this.nombre_usuario=nombre_usuario;
     }
