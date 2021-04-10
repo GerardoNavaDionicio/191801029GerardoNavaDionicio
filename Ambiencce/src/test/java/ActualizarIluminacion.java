@@ -1,8 +1,8 @@
 
 import DaoIluminacion.DaoIluminacion;
-import Iluminacion.Iluminacion;
-import java.sql.SQLException;
-import java.util.Scanner;
+import Iluminacion.*;
+import java.sql.*;
+import java.util.*;
 
 public class ActualizarIluminacion {
     public static void main(String[] args) throws SQLException {
@@ -19,24 +19,23 @@ public class ActualizarIluminacion {
             case 1:
                 {
                     System.out.println("Ingrese el numero de Serie");
-                    int serie1=scanner.nextInt();
+                    int serie=scanner.nextInt(); 
+                    scanner.nextLine();
                     System.out.println("Ingrese La Nueva Marca");
                     String marca = scanner.nextLine();
-                    scanner.nextLine();
-                    Iluminacion iluminacion = new Iluminacion(marca, serie1);
+                    Iluminacion iluminacion = new Iluminacion(marca, serie);
                     DaoIluminacion.actualizar(iluminacion, opcion);
                     System.out.println("Cambio Realizado con Éxito");
                     break;
                 }
             case 2:
                 {
+                    System.out.println("Ingrese el numero de Serie");
+                    int serie=scanner.nextInt();
+                    scanner.nextLine();
                     System.out.println("Ingrese el Nuevo Tipo");
                     String tipo = scanner.nextLine();
-                    scanner.nextLine();
-                    System.out.println("Ingrese el numero de Serie");
-                    int serie2=scanner.nextInt();
-                    scanner.nextLine();
-                    Iluminacion iluminacion = new Iluminacion(serie2, tipo);
+                    Iluminacion iluminacion = new Iluminacion(serie, tipo);
                     DaoIluminacion.actualizar(iluminacion, opcion);
                     System.out.println("Cambio Realizado con Éxito");
                     break;

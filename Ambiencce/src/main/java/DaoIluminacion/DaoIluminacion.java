@@ -38,8 +38,8 @@ public class DaoIluminacion {
         
         declaracion.setString(1,iluminacion.getMarca());
         declaracion.setString(2,iluminacion.getTipo());
-        declaracion.setInt(3,1);
-        declaracion.setInt(4,1);
+        declaracion.setInt(3,0);
+        declaracion.setInt(4,0);
         declaracion.setInt(5,iluminacion.getVoltaje());
         declaracion.executeUpdate();
         ConexionA.close(conexion, declaracion);
@@ -57,11 +57,11 @@ public class DaoIluminacion {
     public static void actualizar(Iluminacion iluminacion, int opcion) throws SQLException{
         
         Connection conexion = ConexionA.getConnection();
-        
+        //private String SQL;
         switch (opcion) {
             case 1:
                 {
-                    String SQL = "UPDATE iluminacion SET marca = ? WHERE serie = ?";
+                    SQL = "UPDATE iluminacion SET marca = ? WHERE serie = ?";
                     PreparedStatement declaracion = conexion.prepareStatement(SQL);
                     declaracion.setString(1, iluminacion.getMarca());
                     declaracion.setInt(2, iluminacion.getSerie());
@@ -71,7 +71,7 @@ public class DaoIluminacion {
                 }
             case 2:
                 {
-                    String SQL = "UPDATE iluminacion SET tipo = ? WHERE serie = ?";
+                    SQL = "UPDATE iluminacion SET tipo = ? WHERE serie = ?";
                     PreparedStatement declaracion = conexion.prepareStatement(SQL);
                     declaracion.setString(1, iluminacion.getTipo());
                     declaracion.setInt(2, iluminacion.getSerie());
@@ -81,7 +81,7 @@ public class DaoIluminacion {
                 }
             case 3:
                 {
-                    String SQL = "UPDATE iluminacion SET voltaje = ? WHERE serie = ?";
+                    SQL = "UPDATE iluminacion SET voltaje = ? WHERE serie = ?";
                     PreparedStatement declaracion = conexion.prepareStatement(SQL);
                     declaracion.setInt(1, iluminacion.getVoltaje());
                     declaracion.setInt(2, iluminacion.getSerie());

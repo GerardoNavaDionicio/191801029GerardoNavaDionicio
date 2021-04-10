@@ -31,6 +31,7 @@ public class Iluminacion {
     public Iluminacion(int serie){
         this.serie=serie;
     }
+    
     public Iluminacion(String marca,int serie){
         this.marca=marca;
         this.serie=serie;
@@ -99,8 +100,5 @@ public class Iluminacion {
     public void setSerie(int serie) {
         this.serie = serie;
     }
-
-    
-    
     
 }
