@@ -7,7 +7,22 @@ import java.util.*;
 public class ActualizarIluminacion {
     public static void main(String[] args) throws SQLException {
         Scanner scanner = new Scanner(System.in);
-        int opcion;
+        System.out.println("Ingrese La Nueva Marca");
+        String marca = scanner.nextLine();
+        System.out.println("Ingrese el nuevo Tipo");
+        String tipo = scanner.nextLine();
+        //scanner.nextLine();
+        System.out.println("Ingrese el nuevo voltaje");
+        int voltaje=scanner.nextInt(); 
+        System.out.println("Ingrese el numero de Serie");
+        int serie=scanner.nextInt(); 
+        Iluminacion iluminacion = new Iluminacion(marca, tipo, voltaje, serie);
+        DaoIluminacion.actualizar(iluminacion);
+        System.out.println("Cambio Realizado con Éxito");
+        
+        
+        
+        /*int opcion;
         do{
             System.out.println("1- Cambiar Marca\n");
             System.out.println("2- Cambiar Tipo\n");
@@ -56,6 +71,6 @@ public class ActualizarIluminacion {
             default:
                 System.out.println("No se puede");
                 break;
-        }
+        }*/
     }
 }

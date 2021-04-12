@@ -38,13 +38,16 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar5 = new javax.swing.JMenuBar();
         jMenu12 = new javax.swing.JMenu();
         jMenu13 = new javax.swing.JMenu();
+        jColorChooser1 = new javax.swing.JColorChooser();
+        jDialog1 = new javax.swing.JDialog();
         escritorio = new javax.swing.JDesktopPane();
+        metodoInsertar = new javax.swing.JButton();
+        metodoMostrar = new javax.swing.JButton();
+        metodoEliminar = new javax.swing.JButton();
+        metodoActualizar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        volver = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        InsertarIlu = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
 
         jMenu6.setText("File");
         jMenuBar2.add(jMenu6);
@@ -70,71 +73,170 @@ public class Principal extends javax.swing.JFrame {
         jMenu13.setText("Edit");
         jMenuBar5.add(jMenu13);
 
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        metodoInsertar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        metodoInsertar.setText("Insertar Iluminacion");
+        metodoInsertar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                metodoInsertarActionPerformed(evt);
+            }
+        });
+
+        metodoMostrar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        metodoMostrar.setText("Mostrar Iluminacion ");
+        metodoMostrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                metodoMostrarActionPerformed(evt);
+            }
+        });
+
+        metodoEliminar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        metodoEliminar.setText("Eliminar Iluminacion");
+        metodoEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                metodoEliminarMouseClicked(evt);
+            }
+        });
+        metodoEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                metodoEliminarActionPerformed(evt);
+            }
+        });
+
+        metodoActualizar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        metodoActualizar.setText("Actualizar Iluminacion");
+        metodoActualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                metodoActualizarActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 0));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 2, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Manipular el Inventario de Iluminacion ");
+
+        volver.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        volver.setText("Volver");
+        volver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                volverActionPerformed(evt);
+            }
+        });
+
+        escritorio.setLayer(metodoInsertar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(metodoMostrar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(metodoEliminar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(metodoActualizar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(volver, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 643, Short.MAX_VALUE)
+            .addGroup(escritorioLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, escritorioLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(metodoMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96)
+                .addComponent(metodoInsertar, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(69, 69, 69)
+                .addComponent(metodoEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addComponent(metodoActualizar)
+                .addGap(55, 55, 55))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, escritorioLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(volver)
+                .addContainerGap())
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 332, Short.MAX_VALUE)
+            .addGroup(escritorioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(metodoMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(metodoInsertar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(metodoEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(metodoActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 509, Short.MAX_VALUE)
+                .addComponent(volver)
+                .addContainerGap())
         );
 
         jButton1.setText("jButton1");
-
-        jMenu1.setText("Iluminacion");
-        jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Insertar");
-
-        InsertarIlu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        InsertarIlu.setText("Insertar");
-        InsertarIlu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                InsertarIluActionPerformed(evt);
-            }
-        });
-        jMenu2.add(InsertarIlu);
-
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem1.setText("Editar");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMenuItem1);
-
-        jMenuBar1.add(jMenu2);
-
-        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void InsertarIluActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InsertarIluActionPerformed
-        Principal insertar = new Principal();
-        escritorio.add(insertar);
-        insertar.show();
-    }//GEN-LAST:event_InsertarIluActionPerformed
+    private void volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverActionPerformed
+        AmbiencceInventario b = new AmbiencceInventario ();
+        b.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_volverActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void metodoActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_metodoActualizarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+        ActualizarIluminacion verventana = new ActualizarIluminacion();
+        escritorio.add(verventana);
+        verventana.show();
+    }//GEN-LAST:event_metodoActualizarActionPerformed
+
+    private void metodoEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_metodoEliminarActionPerformed
+        Eliminar verventana = new Eliminar();
+        escritorio.add(verventana);
+        verventana.show();
+    }//GEN-LAST:event_metodoEliminarActionPerformed
+
+    private void metodoEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodoEliminarMouseClicked
+
+    }//GEN-LAST:event_metodoEliminarMouseClicked
+
+    private void metodoMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_metodoMostrarActionPerformed
+        Mostrar verventana = new Mostrar();
+        escritorio.add(verventana);
+        verventana.show();
+    }//GEN-LAST:event_metodoMostrarActionPerformed
+
+    private void metodoInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_metodoInsertarActionPerformed
+        Insertar verventana = new Insertar();
+        escritorio.add(verventana);
+        verventana.show();
+
+    }//GEN-LAST:event_metodoInsertarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,24 +275,27 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem InsertarIlu;
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JButton jButton1;
-    private javax.swing.JMenu jMenu1;
+    private javax.swing.JColorChooser jColorChooser1;
+    private javax.swing.JDialog jDialog1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JMenuBar jMenuBar4;
     private javax.swing.JMenuBar jMenuBar5;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JButton metodoActualizar;
+    private javax.swing.JButton metodoEliminar;
+    private javax.swing.JButton metodoInsertar;
+    private javax.swing.JButton metodoMostrar;
+    private javax.swing.JButton volver;
     // End of variables declaration//GEN-END:variables
 }

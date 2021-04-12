@@ -7,7 +7,6 @@ package DaoIluminacion;
 
 import Audio.Audio;
 import Conexion.ConexionA;
-import Iluminacion.Iluminacion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -50,45 +49,31 @@ public class DaoAudio {
         declaracion.executeUpdate();
         ConexionA.close(conexion, declaracion);
     }
-    public static void actualizar(Audio audio, int opcion) throws SQLException{
-        
+    //eliminar
+    public static void eliminar(Audio audio) throws SQLException{
         Connection conexion = ConexionA.getConnection();
-        //private String SQL;
-        switch (opcion) {
-            case 1:
-                {
-                    SQL = "UPDATE audio SET marca = ? WHERE modelo = ?";
+        SQL = "DELETE FROM audio WHERE modelo=?";
+        PreparedStatement declaracion = conexion.prepareStatement(SQL);
+        declaracion.setInt(1,audio.getModelo());
+        declaracion.executeUpdate();
+        ConexionA.close(conexion, declaracion);
+    }
+    //actualizar
+    
+    
+    public static void actualizar(Audio audio) throws SQLException{
+        Connection conexion = ConexionA.getConnection();
+        SQL = "UPDATE audio SET marca = ?,tipo = ? ,voltaje = ? WHERE modelo = ?";
                     PreparedStatement declaracion = conexion.prepareStatement(SQL);
                     declaracion.setString(1, audio.getMarca());
-                    declaracion.setInt(2,audio.getModelo());
+                    declaracion.setString(2, audio.getTipo());
+                    declaracion.setInt(3, audio.getVoltaje());
+                    declaracion.setInt(4, audio.getModelo());
                     declaracion.executeUpdate();
                     ConexionA.close(conexion, declaracion);
-                    break;
-                }
-            case 2:
-                {
-                    SQL = "UPDATE audio SET tipo = ? WHERE modelo = ?";
-                    PreparedStatement declaracion = conexion.prepareStatement(SQL);
-                    declaracion.setString(1, audio.getTipo());
-                    declaracion.setInt(2, audio.getModelo());
-                    declaracion.executeUpdate();
-                    ConexionA.close(conexion, declaracion);
-                    break;
-                }
-            case 3:
-                {
-                    SQL = "UPDATE audio SET voltaje = ? WHERE modelo = ?";
-                    PreparedStatement declaracion = conexion.prepareStatement(SQL);
-                    declaracion.setInt(1, audio.getVoltaje());
-                    declaracion.setInt(2, audio.getModelo());
-                    declaracion.executeUpdate();
-                    ConexionA.close(conexion, declaracion);
-                    break;
-                }
-            default:
-                break;
-        }
     }
+  
+    
     
     
     

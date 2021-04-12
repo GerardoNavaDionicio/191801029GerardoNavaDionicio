@@ -38,8 +38,8 @@ public class DaoIluminacion {
         
         declaracion.setString(1,iluminacion.getMarca());
         declaracion.setString(2,iluminacion.getTipo());
-        declaracion.setInt(3,0);
-        declaracion.setInt(4,0);
+        declaracion.setInt(3,1);
+        declaracion.setInt(4,1);
         declaracion.setInt(5,iluminacion.getVoltaje());
         declaracion.executeUpdate();
         ConexionA.close(conexion, declaracion);
@@ -54,44 +54,17 @@ public class DaoIluminacion {
         ConexionA.close(conexion, declaracion);
     }
     //actualizar
-    public static void actualizar(Iluminacion iluminacion, int opcion) throws SQLException{
+    public static void actualizar(Iluminacion iluminacion) throws SQLException{
         
         Connection conexion = ConexionA.getConnection();
-        //private String SQL;
-        switch (opcion) {
-            case 1:
-                {
-                    SQL = "UPDATE iluminacion SET marca = ? WHERE serie = ?";
+        SQL = "UPDATE iluminacion SET marca = ?,tipo = ? ,voltaje = ? WHERE serie = ?";
                     PreparedStatement declaracion = conexion.prepareStatement(SQL);
                     declaracion.setString(1, iluminacion.getMarca());
-                    declaracion.setInt(2, iluminacion.getSerie());
+                    declaracion.setString(2, iluminacion.getTipo());
+                    declaracion.setInt(3, iluminacion.getVoltaje());
+                    declaracion.setInt(4, iluminacion.getSerie());
                     declaracion.executeUpdate();
                     ConexionA.close(conexion, declaracion);
-                    break;
-                }
-            case 2:
-                {
-                    SQL = "UPDATE iluminacion SET tipo = ? WHERE serie = ?";
-                    PreparedStatement declaracion = conexion.prepareStatement(SQL);
-                    declaracion.setString(1, iluminacion.getTipo());
-                    declaracion.setInt(2, iluminacion.getSerie());
-                    declaracion.executeUpdate();
-                    ConexionA.close(conexion, declaracion);
-                    break;
-                }
-            case 3:
-                {
-                    SQL = "UPDATE iluminacion SET voltaje = ? WHERE serie = ?";
-                    PreparedStatement declaracion = conexion.prepareStatement(SQL);
-                    declaracion.setInt(1, iluminacion.getVoltaje());
-                    declaracion.setInt(2, iluminacion.getSerie());
-                    declaracion.executeUpdate();
-                    ConexionA.close(conexion, declaracion);
-                    break;
-                }
-            default:
-                break;
-        }
     }
     
     

@@ -14,8 +14,10 @@ public class Iluminacion {
     private boolean disponible,dmx;
     private int voltaje,serie;
     public  Iluminacion() {
+        //Constructor Vacio
     }
     public  Iluminacion(String marca,String tipo,Boolean disponible,Boolean dmx,int voltaje,int serie) {
+        //Conmstructor Completo
         this.disponible=disponible;
         this.dmx=dmx;
         this.marca=marca;
@@ -44,11 +46,20 @@ public class Iluminacion {
         this.serie=serie;
         this.voltaje=voltaje;
     }
-    
+    public  Iluminacion(String marca, String tipo, int voltaje, int serie) {
+        this.marca=marca;
+        this.tipo=tipo;
+        this.voltaje=voltaje;
+        this.serie=serie;
+    }
     
     
     @Override
     public String toString() {
+        return    "Numero de Serie: "+serie+ "      Voltaje: "+voltaje+"      DMX: "+dmx+"      Disponible: "+disponible+"      Marca: "+marca+"      tipo: "+tipo;
+    }
+    
+    public String imprimir(){
         return "Iluminacion:\n"+"\nMarca\t"+getMarca()+"\nTipo\t"+getTipo()+"\nNumero de Serie\t"+getSerie()+"\nVoltaje\t"+getVoltaje()+"\nDmx\t"+isDmx()+"\nDisponible\t"+isDisponible();
     }
    //--------------------------------------------------------------------------------------------------- 

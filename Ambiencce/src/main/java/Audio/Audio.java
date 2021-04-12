@@ -17,17 +17,36 @@ public class Audio {
     public  Audio() {
     }
     public  Audio(String marca, String tipo, boolean disponible, boolean amplificado,int modelo,int voltaje) {
+        this.marca=marca;
+        this.tipo=tipo;
         this.amplificado=amplificado;
         this.disponible=disponible;
-        this.marca=marca;
         this.modelo=modelo;
-        this.tipo=tipo;
         this.voltaje=voltaje;
     }
     @Override
     public String toString() {
-        return "\nMarca\t" + getMarca() + "\ntipo\t" + getTipo() + "\nmodelo\t" + getModelo() + "\nvoltaje\t" + getVoltaje() + "\namplificado\t" + isAmplificado() + "\ndisponible\t" + isDisponible();
+        return "Numero de Modelo: "+voltaje+ "      Voltaje: "+modelo+"      Amplificado: "+amplificado+"      Disponible: "+disponible+"      Marca: "+marca+"      tipo: "+tipo;
     }
+    
+    
+    public  Audio(String marca, String tipo,int voltaje) {
+        this.marca=marca;
+        this.tipo=tipo;
+        this.voltaje=voltaje;
+    }
+    
+    
+    public  Audio(int modelo) {
+        this.modelo=modelo;
+    }
+    public  Audio(String marca, String tipo,int voltaje,int modelo) {
+        this.marca=marca;
+        this.tipo=tipo;
+        this.voltaje=voltaje;
+        this.modelo=modelo;
+    }
+//---------------------------------------------------------
 
     public String getMarca() {
         return marca;
@@ -76,17 +95,7 @@ public class Audio {
     public void setAmplificado(boolean amplificado) {
         this.amplificado = amplificado;
     }
-    public  Audio(String tipo, int modelo) {
-        this.tipo=tipo;
-        this.modelo=modelo;
-    }
-    public  Audio(int modelo,String marca) {
-        this.marca=marca;
-        this.modelo=modelo;
-    }
-    public  Audio(int voltaje, int modelo) {
-        this.voltaje=voltaje;
-        this.modelo=modelo;
-    }
+
+    
     
 }
