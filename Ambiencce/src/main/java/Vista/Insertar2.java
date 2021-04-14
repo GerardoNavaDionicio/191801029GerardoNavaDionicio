@@ -33,7 +33,7 @@ public class Insertar2 extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        escritorio = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -76,56 +76,56 @@ public class Insertar2 extends javax.swing.JInternalFrame {
             }
         });
 
-        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(marcaText2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(tipoText2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(voltajeText2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(insertar2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(marcaText2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(tipoText2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(voltajeText2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(insertar2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+        javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
+        escritorio.setLayout(escritorioLayout);
+        escritorioLayout.setHorizontalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioLayout.createSequentialGroup()
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel1)
                             .addComponent(jLabel2)))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addGap(231, 231, 231)
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(insertar2)
-                            .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel4)
-                                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(marcaText2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
                                     .addComponent(tipoText2, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(voltajeText2, javax.swing.GroupLayout.Alignment.LEADING))))))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+        escritorioLayout.setVerticalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4)
                 .addGap(42, 42, 42)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addGap(3, 3, 3)
                         .addComponent(marcaText2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(tipoText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(voltajeText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
@@ -137,11 +137,11 @@ public class Insertar2 extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(escritorio)
         );
 
         pack();
@@ -162,12 +162,15 @@ public class Insertar2 extends javax.swing.JInternalFrame {
             tipoText2.setText("");
             voltajeText2.setText("");
         }
+        Notificacion verventana = new Notificacion();
+        escritorio.add(verventana);
+        verventana.show();
     }//GEN-LAST:event_insertar2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane escritorio;
     private javax.swing.JButton insertar2;
-    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

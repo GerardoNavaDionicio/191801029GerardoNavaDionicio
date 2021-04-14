@@ -33,7 +33,7 @@ public class ActualizarIluminacion extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         actualizarText = new javax.swing.JLabel();
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        escritorio = new javax.swing.JDesktopPane();
         jLabel5 = new javax.swing.JLabel();
         marcaTextli = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -90,71 +90,68 @@ public class ActualizarIluminacion extends javax.swing.JInternalFrame {
             }
         });
 
-        jDesktopPane1.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(marcaTextli, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(tipoTextli, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(voltajeTextli, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(actualizarText2li, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(actualizar123, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(marcaTextli, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(tipoTextli, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(voltajeTextli, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(actualizarText2li, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(actualizar123, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(8, 8, 8))
-                            .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel2)))
-                        .addGap(72, 72, 72)
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(tipoTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(voltajeTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(marcaTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+        javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
+        escritorio.setLayout(escritorioLayout);
+        escritorioLayout.setHorizontalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioLayout.createSequentialGroup()
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioLayout.createSequentialGroup()
+                        .addGap(77, 77, 77)
+                        .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(escritorioLayout.createSequentialGroup()
+                                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(escritorioLayout.createSequentialGroup()
+                                        .addComponent(jLabel3)
+                                        .addGap(8, 8, 8))
+                                    .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel2)))
+                                .addGap(72, 72, 72)
+                                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(tipoTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(voltajeTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(marcaTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel4)
                         .addGap(41, 41, 41)
                         .addComponent(actualizarText2li, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addGap(186, 186, 186)
                         .addComponent(actualizar123, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+        escritorioLayout.setVerticalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioLayout.createSequentialGroup()
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(marcaTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tipoTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addGap(52, 52, 52)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(voltajeTextli, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addGap(46, 46, 46)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(actualizarText2li, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
@@ -173,13 +170,13 @@ public class ActualizarIluminacion extends javax.swing.JInternalFrame {
                         .addComponent(actualizarText, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(actualizarText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(32, 32, 32))
@@ -210,6 +207,9 @@ public class ActualizarIluminacion extends javax.swing.JInternalFrame {
             voltajeTextli.setText("");
             actualizarText2li.setText("");
         }
+        Notificacion verventana = new Notificacion();
+        escritorio.add(verventana);
+        verventana.show();
     }//GEN-LAST:event_actualizar123ActionPerformed
 
 
@@ -217,7 +217,7 @@ public class ActualizarIluminacion extends javax.swing.JInternalFrame {
     private javax.swing.JButton actualizar123;
     private javax.swing.JLabel actualizarText;
     private javax.swing.JTextField actualizarText2li;
-    private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JDesktopPane escritorio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

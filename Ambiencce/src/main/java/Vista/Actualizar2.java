@@ -35,7 +35,7 @@ public class Actualizar2 extends javax.swing.JInternalFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        escritorio = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -124,38 +124,38 @@ public class Actualizar2 extends javax.swing.JInternalFrame {
             }
         });
 
-        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(marcaAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(tipoAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(voltajeAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(modeloAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(actualizarAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(marcaAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(tipoAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(voltajeAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(modeloAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(actualizarAudio, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
+        javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
+        escritorio.setLayout(escritorioLayout);
+        escritorioLayout.setHorizontalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, escritorioLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(92, 92, 92))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, escritorioLayout.createSequentialGroup()
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addGap(41, 41, 41)
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4)))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(38, 38, 38)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(marcaAudio)
                     .addComponent(tipoAudio)
                     .addComponent(voltajeAudio, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
@@ -164,27 +164,27 @@ public class Actualizar2 extends javax.swing.JInternalFrame {
                 .addComponent(actualizarAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 47, Short.MAX_VALUE))
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+        escritorioLayout.setVerticalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioLayout.createSequentialGroup()
                 .addGap(4, 4, 4)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
                     .addComponent(marcaAudio))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(tipoAudio, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addComponent(voltajeAudio, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
                         .addGap(1, 1, 1))
                     .addComponent(jLabel4))
                 .addGap(66, 66, 66)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(modeloAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(actualizarAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -195,11 +195,11 @@ public class Actualizar2 extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(escritorio)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(escritorio)
         );
 
         pack();
@@ -234,12 +234,15 @@ public class Actualizar2 extends javax.swing.JInternalFrame {
             voltajeAudio.setText("");
             modeloAudio.setText("");
         }
+        Notificacion verventana = new Notificacion();
+        escritorio.add(verventana);
+        verventana.show();
     }//GEN-LAST:event_actualizarAudioActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton actualizarAudio;
-    private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JDesktopPane escritorio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

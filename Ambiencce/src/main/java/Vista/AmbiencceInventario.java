@@ -70,11 +70,11 @@ public class AmbiencceInventario extends javax.swing.JFrame {
                         .addGap(246, 246, 246)
                         .addComponent(jLabel1))
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGap(291, 291, 291)
-                        .addComponent(iluminacion))
+                        .addGap(362, 362, 362)
+                        .addComponent(audio))
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGap(346, 346, 346)
-                        .addComponent(audio)))
+                        .addGap(313, 313, 313)
+                        .addComponent(iluminacion)))
                 .addContainerGap(273, Short.MAX_VALUE))
         );
         jDesktopPane1Layout.setVerticalGroup(
@@ -82,11 +82,11 @@ public class AmbiencceInventario extends javax.swing.JFrame {
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel1)
-                .addGap(59, 59, 59)
-                .addComponent(iluminacion)
-                .addGap(46, 46, 46)
+                .addGap(87, 87, 87)
                 .addComponent(audio)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addGap(61, 61, 61)
+                .addComponent(iluminacion)
+                .addContainerGap(216, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -97,7 +97,9 @@ public class AmbiencceInventario extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();

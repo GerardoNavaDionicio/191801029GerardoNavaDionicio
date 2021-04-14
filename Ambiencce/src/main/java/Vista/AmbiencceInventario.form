@@ -28,7 +28,10 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jDesktopPane1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jDesktopPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -45,12 +48,12 @@
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="291" max="-2" attributes="0"/>
-                          <Component id="iluminacion" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="362" max="-2" attributes="0"/>
+                          <Component id="audio" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="346" max="-2" attributes="0"/>
-                          <Component id="audio" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="313" max="-2" attributes="0"/>
+                          <Component id="iluminacion" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="273" max="32767" attributes="0"/>
@@ -62,11 +65,11 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                  <Component id="iluminacion" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                   <Component id="audio" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="88" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                  <Component id="iluminacion" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="216" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

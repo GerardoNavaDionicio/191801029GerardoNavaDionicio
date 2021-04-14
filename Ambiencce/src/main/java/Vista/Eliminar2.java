@@ -46,7 +46,7 @@ public class Eliminar2 extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        escritorio = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         eliminarBotot = new javax.swing.JButton();
@@ -75,33 +75,33 @@ public class Eliminar2 extends javax.swing.JInternalFrame {
 
         eliminarText.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
-        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(eliminarBotot, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(eliminarText, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(eliminarBotot, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(eliminarText, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+        javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
+        escritorio.setLayout(escritorioLayout);
+        escritorioLayout.setHorizontalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioLayout.createSequentialGroup()
                 .addComponent(jLabel1)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+            .addGroup(escritorioLayout.createSequentialGroup()
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addGap(75, 75, 75)
                         .addComponent(jLabel2))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                    .addGroup(escritorioLayout.createSequentialGroup()
                         .addGap(216, 216, 216)
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(eliminarBotot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(eliminarText))))
                 .addContainerGap(78, Short.MAX_VALUE))
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+        escritorioLayout.setVerticalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioLayout.createSequentialGroup()
                 .addComponent(jLabel1)
                 .addGap(35, 35, 35)
                 .addComponent(jLabel2)
@@ -116,11 +116,11 @@ public class Eliminar2 extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(escritorio)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(escritorio)
         );
 
         pack();
@@ -139,13 +139,16 @@ public class Eliminar2 extends javax.swing.JInternalFrame {
         finally {
             eliminarText.setText("");
         }
+        Notificacion verventana = new Notificacion();
+        escritorio.add(verventana);
+        verventana.show();
     }//GEN-LAST:event_eliminarBototActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton eliminarBotot;
     private javax.swing.JTextField eliminarText;
-    private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JDesktopPane escritorio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
